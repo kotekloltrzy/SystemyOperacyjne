@@ -24,9 +24,9 @@ main()
  0 - poczatku, 1 -biezacej poz. wskaznika, 2-konca pliku*/
  do
  {
- ilosc=read(plik1,wyraz,20);
- printf("Odczytano %d znakow\n", ilosc);
- printf("Odczytane: %s\n",wyraz);
+  ilosc=read(plik1,wyraz,20);
+  printf("Odczytano %d znakow\n", ilosc);
+  printf("Odczytane: %s\n",wyraz);
  }while(ilosc!=0);
  lseek(plik1,-20L,2); 
  ilosc=read(plik1,wyraz,20);
